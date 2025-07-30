@@ -10,6 +10,7 @@ Wedge.Anchored = true
 Wedge.TopSurface = Enum.SurfaceType.Smooth
 Wedge.BottomSurface = Enum.SurfaceType.Smooth
 
+-- Code slightly modified from https://github.com/EgoMoose/Articles/blob/master/3d%20triangles/3D%20triangles.md
 local function GenerateTriangleAmongThreePoints(a, b, c, thickness, properties)
 	local ab, ac, bc = b - a, c - a, c - b
 	local abd, acd, bcd = ab:Dot(ab), ac:Dot(ac), bc:Dot(bc)
