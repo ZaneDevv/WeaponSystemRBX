@@ -9,8 +9,8 @@ local RunService = game:GetService('RunService')
 
 local TWEEN_AIM_INFORMATION = TweenInfo.new(.5, Enum.EasingStyle.Exponential)
 
-local TweenStartAiming = TweenService:Create(workspace.Camera, TWEEN_AIM_INFORMATION, {FieldOfView = 45})
-local TweenStopAiming = TweenService:Create(workspace.Camera, TWEEN_AIM_INFORMATION, {FieldOfView = 70})
+local TweenStartAiming = TweenService:Create(workspace.CurrentCamera, TWEEN_AIM_INFORMATION, {FieldOfView = 45})
+local TweenStopAiming = TweenService:Create(workspace.CurrentCamera, TWEEN_AIM_INFORMATION, {FieldOfView = 70})
 
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
