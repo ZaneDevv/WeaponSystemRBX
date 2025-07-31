@@ -105,7 +105,7 @@ local function Shoot()
 			
 			local Humanoid = raycastResult.Instance.Parent:FindFirstChildWhichIsA('Humanoid')
 			if (Humanoid == nil) then
-				raycastResult.Instance.Parent.Parent:FindFirstChildWhichIsA('Humanoid')
+				Humanoid = raycastResult.Instance.Parent.Parent:FindFirstChildWhichIsA('Humanoid')
 			end
 			if (Humanoid) then
 				TakeDamageRemote:FireServer(Humanoid, Settings.Damage)
